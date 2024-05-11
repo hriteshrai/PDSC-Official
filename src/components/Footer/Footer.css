@@ -1,0 +1,52 @@
+/* social media shortcuts */
+.social-menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.social-menu i {
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 25px;
+    margin-right: 10px;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+}
+
+.social-menu i:before {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.social-menu a {
+    text-decoration: none;
+}
+
+.fa-facebook {
+    background: #3007e7;
+}
+
+.fa-github {
+    background: #00080c;
+}
+
+.fa-twitter {
+    background: #119beb;
+}
+
+.fa-instagram {
+    background: #9440b6;
+}
+
+.fa-youtube {
+    background: #c4302b;
+}
+
+.social-menu i:hover {
+    opacity: 0.7;
+    border-radius: 0;
+}

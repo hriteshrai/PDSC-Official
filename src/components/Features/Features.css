@@ -1,0 +1,10 @@
+.slide-2 {
+    max-height: 500px;
+    transition: max-height 0.8s ease-in-out;
+}
+
+.content-hide-2 {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
