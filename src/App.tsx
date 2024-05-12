@@ -1,6 +1,4 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 //Import all css files
 import './css/flex-slider.css'
 import './css/fontawesome.css'
