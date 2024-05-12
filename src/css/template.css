@@ -791,30 +791,32 @@ section.coming-soon form {
     text-align: center;
 }
 
-section.coming-soon form input {
-    width: 100%;
-    height: 40px;
-    background-color: rgba(250,250,250,0.1);
-    border-radius: 7px;
-    border: none;
-    outline: none;
-    color: rgb(204,204,204);
-    font-size: 13px;
-    margin-bottom: 20px;
-    letter-spacing: 0.5px;
+section.coming-soon form input,
+section.coming-soon form textarea {
+  width: 100%;
+  height: 40px;
+  background-color: rgba(250, 250, 250, 0.1);
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  color: rgb(204, 204, 204);
+  font-size: 13px;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
 }
 
-section.coming-soon form input:focus {
-    outline: none;
-    border: none;
-    box-shadow: none;
-    color: #fff;
-    background-color: rgba(250,250,250,0.1);
+section.coming-soon form input:focus,
+section.coming-soon form textarea:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  color: #fff;
+  background-color: rgba(250, 250, 250, 0.1);
 }
 
 section.coming-soon form::placeholder { color: #fff }
 section.coming-soon form input::placeholder { color: #fff; }
-section.coming-soon form input::placeholder { color: #fff; }
+section.coming-soon form textarea::placeholder { color: #fff; }
 
 section.coming-soon form button {
     margin-top: 10px;

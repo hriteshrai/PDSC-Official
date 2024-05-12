@@ -1,6 +1,47 @@
+import { FormEvent, useRef, useState } from 'react';
 import './GeneralMembersForm.css'
 
 export default function GeneralMembersForm() {  
+  const formRef = useRef<HTMLFormElement>(null);
+  const [isDisabled, setIsDisabled] = useState(false);
+  const [showSuccessMsg, setShowSuccessMsg] = useState(false);
+  function handleSubmit(e:FormEvent) {
+    e.preventDefault();
+    if (!formRef.current) return;
+    setIsDisabled(true);
+    const formData = new FormData(formRef.current);
+    const keyValuePairs = [];
+    for (const pair of formData.entries()) {
+      keyValuePairs.push(pair[0] + "=" + pair[1]);
+    }
+    const formDataString = keyValuePairs.join("&");
+    // Send a POST request to PDSC Google Apps Script
+    fetch(
+      "https://script.google.com/macros/s/AKfycbxlpPVYhDZoA87MksiCPu6GWD9CDIbk_m_6gvXhLPSFQuNkL-eZLky8HHNAhJ2emz3ZyQ/exec",
+      {
+        redirect: "follow",
+        method: "POST",
+        body: formDataString,
+        headers: {
+          "Content-Type": "text/plain;charset=utf-8",
+        },
+      }
+    )
+      .then(function (response) {
+        if (response) {
+          formRef.current?.reset();
+          return response;
+        } else {
+          alert('Failed to submit the form');
+        }
+      })
+      .then(function () {
+        // Display a success message
+        setShowSuccessMsg(true);
+        setIsDisabled(false);
+      });
+  }
+
     return (
         <section className="section coming-soon" data-section="section3">
       <div className="section-heading">
@@ -28,8 +69,9 @@ export default function GeneralMembersForm() {
                 </h6>
               </div>
               <form
-                action="https://script.google.com/macros/s/AKfycbwCYTBtQBYHfG8u0Mq1sUyl5M6mBoM9_XhmVNMRlATRtt6KpYmf844UXYY1M7T2KqrZ/exec"
-                method="POST"
+              ref={formRef}
+              onSubmit={(e)=>handleSubmit(e)}
+              style={{position: 'relative'}}
               >
                 <div className="row">
                   <div className="col-lg-6 col-sm-12 col-md-6 col-xs-12">
@@ -81,6 +123,7 @@ export default function GeneralMembersForm() {
                             marginBottom: '20px',
                             letterSpacing: '0.5px',
                             }}
+                          required
                       >
                         <option value="choice_first" style={{color: "#00080c"}}>
                           Department Choice First
@@ -128,6 +171,7 @@ export default function GeneralMembersForm() {
                             marginBottom: '20px',
                             letterSpacing: '0.5px',
                         }}
+                        required
                       >
                         <option value="choice_second" style={{color: "#00080c"}}>
                           Department Choice Second
@@ -175,6 +219,7 @@ export default function GeneralMembersForm() {
                             marginBottom: '20px',
                             letterSpacing: '0.5px',
                         }}
+                        required
                       >
                         <option value="" style={{color: "#00080c"}}>
                           Department Choice Third
@@ -208,7 +253,7 @@ export default function GeneralMembersForm() {
                     </fieldset>
                   </div>
                 </div>
-                <div className="row">
+                <div className="row mt">
                   <div className="col-lg-6 col-sm-12 col-md-6 col-xs-12">
                     <fieldset>
                       <input
@@ -230,7 +275,7 @@ export default function GeneralMembersForm() {
                             width: '100%',
                             height: '40px',
                             backgroundColor: 'rgba(250, 250, 250, 0.1)',
-                            borderRadius: '0px',
+                            borderRadius: '7px',
                             border: 'none',
                             outline: 'none',
                             color: '#fff',
@@ -253,12 +298,12 @@ export default function GeneralMembersForm() {
                     </fieldset>
                   </div>
                 </div>
-                <div className="row">
+                <div className="row mt">
                   <div className="col-md-12 col-xs-12 col-sm-12 col-lg-12">
                     <fieldset>
-                      <input
+                      <textarea
+                        rows={3}
                         name="Why Join Us?"
-                        type="text"
                         className="form-control"
                         id="why-join-us"
                         placeholder="Why Join Us?"
@@ -271,10 +316,16 @@ export default function GeneralMembersForm() {
                       <strong style={{color: "white", textAlign: "center"}}>
                         Application for the year 2023-2024 has been
                         closed</strong>
-                      <button type="submit" id="form-submit" className="button">
-                        SUBMIT
+                      <button disabled={isDisabled} type="submit" id="form-submit" className="button">
+                        {isDisabled ? 'Submitting' : 'Submit'}
                       </button>
                     </fieldset>
+                    {
+                      showSuccessMsg &&
+                    <div id="success-message" className="alert alert-success">
+                      Your form has been submitted successfully!
+                    </div>
+                    }
                   </div>
                 </div>
               </form>

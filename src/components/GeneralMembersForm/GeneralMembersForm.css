@@ -1,0 +1,10 @@
+#success-message{
+    border: 3px solid #44aa70;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.mt{
+    margin-top: -110px;
+}
