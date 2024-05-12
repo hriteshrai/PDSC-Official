@@ -43,7 +43,7 @@ const renderExecutives = (executives: ExecutivesType[]) => {
 
 export default function Executives() {
     return (
-        <div className="content3">
+        <div className="content3" data-section='team'>
               <p className="heading">The Executive Team</p>
                 {
                     renderExecutives(ExecutivesData)

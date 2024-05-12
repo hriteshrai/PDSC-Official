@@ -1,7 +1,10 @@
 import './Navbar.css'
 import logo from '../../assets/images/Alt.png'
+import { useState } from 'react';
 
 export default function Navbar() {
+
+  const [isActive,setIsActive] = useState(false);
 
 const scrollToSection = (sectionDataAttribute:string) => {
   const element = document.querySelector(`[data-section="${sectionDataAttribute}"]`);
@@ -14,22 +17,20 @@ const scrollToSection = (sectionDataAttribute:string) => {
       <div className="logo">
         <img src={logo} alt="logo" width="110" height="35" />
       </div>
-      <a href="#menu" className="menu-link"><i className="fa fa-bars"></i></a>
-      <nav id="menu" className="main-nav" role="navigation">
+      <a href="#menu" className= {`menu-link ${isActive && 'active'}`} onClick={()=>setIsActive((p)=>!p)}><i className="fa fa-bars"></i></a>
+      <nav id="menu" className={`main-nav ${isActive && 'active'}`} role="navigation">
         <ul className="main-menu">
-          <li><a href="#section1">Home</a></li>
+          <li><a onClick={()=>scrollToSection('section1')}>Home</a></li>
           <li className="has-submenu">
-            <a href="#section2">About Us</a>
+            <a onClick={()=>scrollToSection('section2')}>About Us</a>
             <ul className="sub-menu">
-              <li><a href="#section2">Who we are?</a></li>
-              <li><a onClick={() => scrollToSection('section6')}>Become Member</a></li>
-              <li><a href="#">Our Team</a></li>
+              <li><a onClick={()=>scrollToSection('section2')}>Who we are?</a></li>
+              <li><a onClick={() => scrollToSection('section3')}>Become Member</a></li>
+              <li><a onClick={()=>scrollToSection('team')}>Our Team</a></li>
             </ul>
           </li>
-          <li><a href="#section4">Programs</a></li>
-          {/* <!-- <li><a href="#section5">Video</a></li> --> */}
-          <li><a href="#section6">Contact</a></li>
-          {/* <!--<li><a href="http://blog.pdscorg.com">Blogs</a></li>--> */}
+          <li><a onClick={()=>scrollToSection('section5')}>Programs</a></li>
+          <li><a onClick={()=>scrollToSection('section6')}>Contact</a></li>
         </ul>
       </nav>
     </header>
