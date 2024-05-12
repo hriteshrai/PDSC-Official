@@ -81,8 +81,8 @@ export default function JoinUs() {
                         organizing workshops, events, bringing on real projects.
                         This makes PDSC a quality learning platform for everyone
                         everywhere.
-                        <a rel="nofollow" href="#" target="_parent"
-                          >Checkout for workshops</a
+                        <a rel="nofollow" style={{color: "#44aa70"}} href="#" target="_parent"
+                          >&nbsp;Checkout for workshops&nbsp;</a
                         >
                         being attempted soon.
                       </p>
