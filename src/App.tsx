@@ -1,4 +1,3 @@
-
 //Import all css files
 import './css/flex-slider.css'
 import './css/fontawesome.css'

@@ -49,7 +49,7 @@ export default function GeneralMembersForm() {
       </div>
       <div className="continer centerIt">
         <div>
-          <h4 style= {{textAlign: "center", paddingLeft: "8px", paddingRight: "8px"}}>
+          <h4 style= {{textAlign: "center", paddingLeft: "16px", paddingRight: "16px"}}>
             Wanna be a part of it?<em style={{color: "#44aa70"}}>
               Apply when application is open</em
             >
@@ -63,7 +63,7 @@ export default function GeneralMembersForm() {
               <div className="top-content">
                 <h6>
                   Register and be a part of<em style= {{color: "#44aa70"}}>
-                    the journey</em
+                    &nbsp;the journey&nbsp; </em
                   >
                   where you learn leadership & other skills
                 </h6>
