@@ -9,10 +9,10 @@ type ExecutivesType = {
     batch: string
 }
 
-const SinglePerson = ({exec}:{exec: ExecutivesType}) => {            
+const SinglePerson = ({exec}:{exec: ExecutivesType}) => {   
   return (
     <div className="person">
-        <img src={`src/assets/images/${exec.img}`} />
+        <img src={exec.img} alt={exec.name}/>
         <div className="shoulder">
         <p className="name">{exec.name}</p>
         <p className="position">{exec.post}</p>
