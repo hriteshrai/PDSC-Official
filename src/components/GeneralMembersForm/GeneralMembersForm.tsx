@@ -4,14 +4,14 @@ import form from './formData.json'
 import DropdownInput from '../../sub_components/FormComponents/DropDown';
 import LongAnswerInput from '../../sub_components/FormComponents/LongAnswer';
 import ShortAnswerInput from '../../sub_components/FormComponents/ShortAnswer';
-import { GoogleFormProvider, useGoogleForm } from 'react-google-forms-hooks'
+import {GoogleFormProvider, useGoogleForm } from 'react-google-forms-hooks'
 
 export default function GeneralMembersForm() {
   const formElement = useRef<HTMLFormElement | null>(null);
   const [isDisabled, setIsDisabled] = useState(false);
   const [showSuccessMsg, setShowSuccessMsg] = useState(false);
-  const methods = useGoogleForm({ form })
-  const onSubmit = (data) => {
+  const methods = useGoogleForm({form})
+  const onSubmitt = (data:FormData) => {
     setIsDisabled(true)
     methods.submitToGoogleForms(data).then(() => {
       setIsDisabled(false)
@@ -51,7 +51,7 @@ export default function GeneralMembersForm() {
               </div>
               <GoogleFormProvider {...methods}>
               <form
-              onSubmit={methods.handleSubmit(onSubmit)}
+              onSubmit={methods.handleSubmit(onSubmitt)}
               style={{position: 'relative'}}
               ref={formElement}
               >
