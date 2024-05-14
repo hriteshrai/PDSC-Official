@@ -8,3 +8,6 @@
 .mt{
     margin-top: -110px;
 }
+select{
+    padding: 0 10px;
+}
