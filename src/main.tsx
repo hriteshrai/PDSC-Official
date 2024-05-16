@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
+import NotFound from './pages/NotFound.tsx'
 import RedirectToPowerSeries from './utils/RedirectToPowerSeries.tsx'
 import './index.css'
 import {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
   {
     path: "/power-series",
     element: <RedirectToPowerSeries />,
+  },
+  {
+    path: "*",
+    element: <NotFound />,
   }
 ]);
 
