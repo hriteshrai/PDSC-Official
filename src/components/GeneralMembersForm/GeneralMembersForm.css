@@ -11,3 +11,6 @@
 select{
     padding: 0 10px;
 }
+.submitting{
+    opacity: 0.5;
+}

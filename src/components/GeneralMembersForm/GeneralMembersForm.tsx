@@ -1,19 +1,22 @@
 import { useRef, useState } from 'react';
 import './GeneralMembersForm.css'
-import form from './formData.json'
+import formJson from './formData.json'
 import DropdownInput from '../../sub_components/FormComponents/DropDown';
 import LongAnswerInput from '../../sub_components/FormComponents/LongAnswer';
 import ShortAnswerInput from '../../sub_components/FormComponents/ShortAnswer';
 import {GoogleFormProvider, useGoogleForm } from 'react-google-forms-hooks'
+import { GoogleForm } from 'react-google-forms-hooks';
+import { FieldValues } from 'react-hook-form';
 
 export default function GeneralMembersForm() {
   const formElement = useRef<HTMLFormElement | null>(null);
   const [isDisabled, setIsDisabled] = useState(false);
   const [showSuccessMsg, setShowSuccessMsg] = useState(false);
+  const form = formJson as GoogleForm
   const methods = useGoogleForm({form})
-  const onSubmitt = (data:FormData) => {
+  const onSubmitt = (data: FieldValues) => {
     setIsDisabled(true)
-    methods.submitToGoogleForms(data).then(() => {
+    methods.submitToGoogleForms(data as FormData).then(() => {
       setIsDisabled(false)
       setShowSuccessMsg(true)
       formElement.current?.reset();
@@ -159,7 +162,7 @@ export default function GeneralMembersForm() {
                     <fieldset className="form__submit__contents">
                       <strong style={{color: "white", textAlign: "center"}}>
                         Application for the year 2025-2026 is Opening Soon!</strong>
-                      <button disabled={isDisabled} type="submit" id="form-submit" className="button">
+                      <button disabled={isDisabled} type="submit" id="form-submit" className={`button ${isDisabled && "submitting"}`}>
                         {isDisabled ? 'Submitting' : 'Submit'}
                       </button>
                     </fieldset>
