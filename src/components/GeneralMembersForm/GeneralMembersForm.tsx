@@ -34,7 +34,7 @@ export default function GeneralMembersForm() {
       <div className="continer centerIt">
         <div>
           <h4 style= {{textAlign: "center", paddingLeft: "16px", paddingRight: "16px"}}>
-            Wanna be a part of it?<em style={{color: "#44aa70"}}>
+            Wanna be a part of it?<em style={{color: "#44aa70"}}>&nbsp;
               Apply when application is open</em
             >
           </h4>
@@ -162,7 +162,7 @@ export default function GeneralMembersForm() {
                     <fieldset className="form__submit__contents">
                       <strong style={{color: "white", textAlign: "center"}}>
                         Application for the year 2025-2026 is Opening Soon!</strong>
-                      <button disabled={isDisabled} type="submit" id="form-submit" className={`button ${isDisabled && "submitting"}`}>
+                      <button disabled={true} type="submit" id="form-submit" className={`button submitting ${isDisabled && "submitting"}`}>
                         {isDisabled ? 'Submitting' : 'Submit'}
                       </button>
                     </fieldset>

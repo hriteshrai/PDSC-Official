@@ -1,0 +1,11 @@
+.carousel-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-control-prev-icon{
+    margin-right: 50px;
+}
+.carousel-control-next-icon{
+    margin-left: 50px;
+}

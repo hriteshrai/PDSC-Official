@@ -13,6 +13,7 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import Navbar from './components/Navbar/Navbar'
 import MainBanner from './components/MainBanner/MainBanner'
 import Features from './components/Features/Features'
+import EventsComponent from './components/EventsComponent/EventsComponent'
 import JoinUs from './components/JoinUs/JoinUs'
 import GeneralMembersForm from './components/GeneralMembersForm/GeneralMembersForm'
 import PastBootcamps from './components/PastBootcamps/PastBootcamps'
@@ -27,6 +28,7 @@ function App() {
       <MainBanner />
       <Features />
       <JoinUs />
+      <EventsComponent />
       <GeneralMembersForm />
       <PastBootcamps />
       <ReachOut />

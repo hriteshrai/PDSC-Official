@@ -17,8 +17,8 @@ const scrollToSection = (sectionDataAttribute:string) => {
       <div className="logo">
         <img src={logo} alt="logo" width="110" height="35" />
       </div>
-      <a href="#menu" className= {`menu-link ${isActive && 'active'}`} onClick={()=>setIsActive((p)=>!p)}><i className="fa fa-bars"></i></a>
-      <nav id="menu" className={`main-nav ${isActive && 'active'}`} role="navigation">
+      <a href="#menu" className= {`menu-link ${isActive ? 'active': ''}`} onClick={()=>setIsActive((p)=>!p)}><i className="fa fa-bars"></i></a>
+      <nav id="menu" className={`main-nav ${isActive ? 'active': 'not-active'}`} role="navigation">
         <ul className="main-menu">
           <li><a onClick={()=>scrollToSection('section1')}>Home</a></li>
           <li className="has-submenu">
