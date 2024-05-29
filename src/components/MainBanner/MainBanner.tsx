@@ -1,6 +1,13 @@
 import './MainBanner.css'
 import introVideo from '../../assets/images/pdsc_intro.mp4'
 
+const scrollToSection = (sectionDataAttribute:string) => {
+  const element = document.querySelector(`[data-section="${sectionDataAttribute}"]`);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
 export default function MainBanner() {
     return (
          <section className="section main-banner" id="top" data-section="section1">
@@ -15,8 +22,8 @@ export default function MainBanner() {
           </h2>
           <div className="main-button">
             <div className="scroll-to-section">
-              <a href="#section2">Discover more</a>
-              <a href="#section3">Apply Now</a>
+              <a style={{color:'white',cursor:'pointer'}} onClick={()=>scrollToSection('section2')}>Discover more</a>
+              <a style={{color:'white',cursor:'pointer'}} onClick={()=>scrollToSection('section3')}>Apply Now</a>
             </div>
           </div>
         </div>

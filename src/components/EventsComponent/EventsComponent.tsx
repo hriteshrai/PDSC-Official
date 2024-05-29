@@ -4,7 +4,7 @@ import { useState } from 'react'
 const EventsComponent = () => {
     const [activeCarousel, setActiveCarousel] = useState(0);
     return (
-        <section className="section coming-soon" data-section="section3" style={{paddingBottom: "10vh"}}>
+        <section className="section coming-soon" data-section="section2_5" style={{paddingBottom: "10vh"}}>
       <div className="section-heading">
         <h2>Register Now for our <span style= {{color: "#44aa70"}}>Events</span></h2>
       </div>
@@ -14,7 +14,7 @@ const EventsComponent = () => {
             {activeCarousel === 0 && 
             <div className="carousel-item">
                 <iframe
-                    src="https://lu.ma/embed-checkout/evt-HqAa6QTmvEBABaB"
+                    src="https://lu.ma/embed-checkout/evt-l74EgDd3CygCbHZ"
                     width="1080"
                     height="450"
                     frameBorder={0}
