@@ -19,9 +19,21 @@ import GeneralMembersForm from './components/GeneralMembersForm/GeneralMembersFo
 import PastBootcamps from './components/PastBootcamps/PastBootcamps'
 import ReachOut from './components/ReachOut/ReachOut'
 import Footer from './components/Footer/Footer'
+import { useEffect } from 'react'
 
-function App() {
+const scrollToSection = (sectionDataAttribute:string) => {
+  const element = document.querySelector(`[data-section="${sectionDataAttribute}"]`);
+  if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+  }
+};
 
+function App({moveToSection}:{moveToSection:string}) {
+  useEffect(()=>{
+    window.onload = () => {
+      scrollToSection(moveToSection);
+    }
+  },[])
   return (
     <>
       <Navbar />
