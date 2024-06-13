@@ -14,7 +14,7 @@ const EventsComponent = () => {
             {activeCarousel === 0 && 
             <div className="carousel-item">
                 <iframe
-                    src="https://lu.ma/embed-checkout/evt-l74EgDd3CygCbHZ"
+                    src="https://lu.ma/embed/event/evt-wtO9ywBFpa9hdVF/simple"
                     width="1080"
                     height="450"
                     frameBorder={0}
