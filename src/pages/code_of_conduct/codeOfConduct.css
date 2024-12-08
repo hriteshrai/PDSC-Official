@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet" ');
+
+.cc-container{
+    margin-top: 5rem;
+    background-color: #282828;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5vh 10vw;
+    color: rgb(221, 221, 221);
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cc-head{
+    font-size: 3rem;
+    margin-bottom: 3vh;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cc-content p{
+    margin-top: 1vh;
+    color: rgb(221, 221, 221);
+    font-size: 18px;
+}
+
+h2{
+    margin-top: 4vh;
+}
+
+ol li{
+    margin-top: 1vh;
+}

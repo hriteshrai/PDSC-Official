@@ -2,7 +2,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import NotFound from './pages/NotFound.tsx'
 import RedirectToPowerSeries from './utils/RedirectToPowerSeries.tsx'
-import RedirectToMeet from './utils/RediectToMeet.tsx'
+import CodeOfConduct from './pages/code_of_conduct/codeOfConduct.tsx'
 import './index.css'
 import {
   createBrowserRouter,
@@ -15,16 +15,16 @@ const router = createBrowserRouter([
     element: <App moveToSection = {'section1'}/>,
   },
   {
+    path: "/code-of-conduct",
+    element: <CodeOfConduct />,
+  },
+  {
     path: "/power-series",
     element: <RedirectToPowerSeries />,
   },
   {
     path: "/general-member",
     element: <App moveToSection ={'section3'}/>,
-  },
-  {
-    path: "/python-for-automation",
-    element: <RedirectToMeet/>,
   },
   {
     path: "*",
