@@ -1,58 +1,58 @@
 [
-    {
-        "name": "Krishant Timilsina",
-        "post": "Coordinator",
-        "img" : "krishant_t.jpg",
-        "department" : "Computer Engineering",
-        "batch" : "2078 BS"
-    },
-    {
-        "name": "Bindu Paudel",
-        "post": "Secretary",
-        "img" : "Bindu3.png",
-        "department" : "Computer Engineering",
-        "batch" : "2078 BS"     
-    },
-    {
-        "name": "Raunak Shrestha",
-        "post": "Finance Manager",
-        "img" : "Raunak4.jpg",
-        "department" : "Electrical Engineering",
-        "batch" : "2079 BS"
-    },
-    {
-        "name": "Darshan Kr. Paudyal",
-        "post": "Innovation Manager",
-        "img" : "darshan_p2.png",
-        "department" : "Computer Engineering",
-        "batch" : "2079 BS"
-    },
-    {
-        "name": "Narayan Adhikari",
-        "post": "Event Manager",
-        "img" : "Narayan.jpeg",
-        "department" : "Civil Engineering",
-        "batch" : "2079 BS"
-    },
-    {
-        "name": "Aman Partel",
-        "post": "Creative Lead",
-        "img" : "Aman3.jpg",
-        "department" : "Computer Engineering",
-        "batch" : "2079 BS"
-    },
-    {
-        "name": "Prakash Mahato",
-        "post": "HR Manager",
-        "img" : "Prakash.jpg",
-        "department" : "Electronics Engineering",
-        "batch" : "2078 BS"
-    },
-    {
-        "name": "Samrat Manandhar",
-        "post": "Marketing Manager",
-        "img" : "Samrat5.jpg",
-        "department" : "Electrical Engineering",
-        "batch" : "2079 BS"
-    }
+  {
+    "name": "Krishant Timilsina",
+    "post": "Coordinator",
+    "img": "krishant_t.jpg",
+    "department": "Computer Engineering",
+    "batch": "2078 BS"
+  },
+  {
+    "name": "Bindu Paudel",
+    "post": "Secretary",
+    "img": "Bindu3.png",
+    "department": "Computer Engineering",
+    "batch": "2078 BS"
+  },
+  {
+    "name": "Raunak Mishra",
+    "post": "Finance Manager",
+    "img": "Raunak4.jpg",
+    "department": "Electrical Engineering",
+    "batch": "2079 BS"
+  },
+  {
+    "name": "Darshan Kr. Paudyal",
+    "post": "Innovation Manager",
+    "img": "darshan_p2.png",
+    "department": "Computer Engineering",
+    "batch": "2079 BS"
+  },
+  {
+    "name": "Narayan Adhikari",
+    "post": "Event Manager",
+    "img": "Narayan.jpeg",
+    "department": "Civil Engineering",
+    "batch": "2079 BS"
+  },
+  {
+    "name": "Aman Partel",
+    "post": "Creative Lead",
+    "img": "Aman3.jpg",
+    "department": "Computer Engineering",
+    "batch": "2079 BS"
+  },
+  {
+    "name": "Prakash Mahato",
+    "post": "HR Manager",
+    "img": "Prakash.jpg",
+    "department": "Electronics Engineering",
+    "batch": "2078 BS"
+  },
+  {
+    "name": "Samrat Manandhar",
+    "post": "Marketing Manager",
+    "img": "Samrat5.jpg",
+    "department": "Electrical Engineering",
+    "batch": "2079 BS"
+  }
 ]
