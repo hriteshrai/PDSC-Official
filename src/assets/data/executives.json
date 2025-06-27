@@ -1,58 +1,58 @@
 [
     {
-        "name": "Krishant Timilsina",
-        "post": "Coordinator",
-        "img" : "krishant_t.jpg",
-        "department" : "Computer Engineering",
-        "batch" : "2078 BS"
-    },
-    {
-        "name": "Bindu Paudel",
-        "post": "Secretary",
-        "img" : "Bindu3.png",
-        "department" : "Computer Engineering",
-        "batch" : "2078 BS"     
-    },
-    {
-        "name": "Raunak Shrestha",
-        "post": "Finance Manager",
-        "img" : "Raunak4.jpg",
-        "department" : "Electrical Engineering",
-        "batch" : "2079 BS"
-    },
-    {
         "name": "Darshan Kr. Paudyal",
-        "post": "Innovation Manager",
-        "img" : "darshan_p2.png",
+        "post": "Coordinator",
+        "img" : "darshan.jpg",
         "department" : "Computer Engineering",
         "batch" : "2079 BS"
     },
     {
-        "name": "Narayan Adhikari",
-        "post": "Event Manager",
-        "img" : "Narayan.jpeg",
-        "department" : "Civil Engineering",
-        "batch" : "2079 BS"
-    },
-    {
-        "name": "Aman Partel",
-        "post": "Creative Lead",
-        "img" : "Aman3.jpg",
+        "name": "Ashish Pandey",
+        "post": "Secretary",
+        "img" : "aashish.png",
         "department" : "Computer Engineering",
-        "batch" : "2079 BS"
+        "batch" : "2079 BS"     
     },
     {
-        "name": "Prakash Mahato",
-        "post": "HR Manager",
-        "img" : "Prakash.jpg",
-        "department" : "Electronics Engineering",
-        "batch" : "2078 BS"
-    },
-    {
-        "name": "Samrat Manandhar",
-        "post": "Marketing Manager",
-        "img" : "Samrat5.jpg",
+        "name": "Adarsha Karki",
+        "post": "Finance Manager",
+        "img" : "aadarsha.jpg",
         "department" : "Electrical Engineering",
+        "batch" : "2080 BS"
+    },
+    {
+        "name": "Yurisha Bajracharya",
+        "post": "Innovation Lead",
+        "img" : "yurisha.jpg",
+        "department" : "Computer Engineering",
+        "batch" : "2080 BS"
+    },
+    {
+        "name": "Asmit Pokhrel",
+        "post": "Event Manager",
+        "img" : "asmit.jpg",
+        "department" : "Electrical Engineering",
+        "batch" : "2080 BS"
+    },
+    {
+        "name": "Sunil Lamichhane",
+        "post": "Creative Lead",
+        "img" : "sunil.jpg",
+        "department" : "Computer Engineering",
+        "batch" : "2080 BS"
+    },
+    {
+        "name": "Saya Parajuli",
+        "post": "HR Manager",
+        "img" : "saya.jpg",
+        "department" : "Electronics Engineering",
         "batch" : "2079 BS"
+    },
+    {
+        "name": "Hritesh Rai",
+        "post": "Marketing Manager",
+        "img" : "hritesh.jpg",
+        "department" : "Electrical Engineering",
+        "batch" : "2080 BS"
     }
 ]

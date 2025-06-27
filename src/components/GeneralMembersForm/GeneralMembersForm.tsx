@@ -27,7 +27,7 @@ export default function GeneralMembersForm() {
   }
   
     return (
-        <section className="section coming-soon" data-section="section3">
+        <section className="section coming-soon" data-section="section3" id = "application_form">
       <div className="section-heading">
         <h2>Join our Enthusiastic Team</h2>
       </div>
@@ -161,7 +161,7 @@ export default function GeneralMembersForm() {
                   <div className="col-md-12 col-xs-12 col-sm-12 col-lg-12">
                     <fieldset className="form__submit__contents">
                       <strong style={{color: "white", textAlign: "center"}}>
-                        Application for the year 2024-2025 is Open!</strong>
+                        Application for the year 2025-2026 is Open!</strong>
                       <button disabled={isDisabled} type="submit" id="form-submit" className={`button ${isDisabled && "submitting"}`}>
                         {isDisabled ? 'Submitting' : 'Submit'}
                       </button>
