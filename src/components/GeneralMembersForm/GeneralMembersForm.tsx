@@ -54,7 +54,7 @@ export default function GeneralMembersForm() {
           >
             Wanna be a part of it?
             <em style={{ color: "#44aa70" }}>
-              &nbsp; Application for the year 2024-2025 is open!
+              &nbsp; Application for the year 2025-2026is open!
             </em>
           </h4>
         </div>

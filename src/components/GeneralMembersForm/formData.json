@@ -79,7 +79,7 @@
         {"label": "Creative Team"},
         {"label": "Social Media and Marketing Team"}
       ],
-      "required": false
+      "required": true
     },
     {
       "label": "Why Us?",
