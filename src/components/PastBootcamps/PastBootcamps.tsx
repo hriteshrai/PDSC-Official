@@ -34,7 +34,7 @@ export default function PastBootcamps() {
               </div>
               <figure>
                 <a
-                  href="https://https://www.youtube.com/watch?v=Y-PGgjsdpLs"
+                  href="https://www.youtube.com/watch?v=Y-PGgjsdpLs"
                   className="play"
                   ><img src={pythonLogo}
                 /></a>
