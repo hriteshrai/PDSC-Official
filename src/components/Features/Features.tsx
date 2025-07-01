@@ -1,9 +1,12 @@
 import './Features.css'
 import { useState } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 // import $ from 'jquery'
 
 export default function Features() {
     const [isHovered, setIsHovered] = useState(0);
+    const navigator = useNavigate();
+    const locator = useLocation();
 //      useEffect(() => {
 //         $("div.features-post").hover(
 //     function () {
@@ -14,6 +17,16 @@ export default function Features() {
 //     }
 //   );
 //     }, []);
+    const scrollToSection = (sectionDataAttribute:string) => {
+      if (locator.pathname !== '/') {
+        navigator('/');
+        return;
+      }
+      const element = document.querySelector(`[data-section="${sectionDataAttribute}"]`);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
     return (
         <section className="features">
       <div className="container">
@@ -37,7 +50,7 @@ export default function Features() {
                     related topics..
                   </p>
                   <div className="scroll-to-section">
-                    <a href="#section2">More Info.</a>
+                    <a onClick={()=>scrollToSection('section2')}>More Info.</a>
                   </div>
                 </div>
               </div>
@@ -61,7 +74,7 @@ export default function Features() {
                     factors as possible.
                   </p>
                   <div className="scroll-to-section">
-                    <a href="#section5">Details</a>
+                    <a onClick={()=>scrollToSection('section5')}>Details</a>
                   </div>
                 </div>
               </div>
@@ -84,7 +97,7 @@ export default function Features() {
                     Stay motivated, stay Learning. We are being expert soon
                   </p>
                   <div className="scroll-to-section">
-                    <a href="#section5">Read More</a>
+                    <a onClick={()=>scrollToSection('section5')}>Read More</a>
                   </div>
                 </div>
               </div>
