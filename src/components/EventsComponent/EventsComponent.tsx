@@ -10,106 +10,87 @@ const EventsComponent = () => {
             </div>
 
         <div className="container py-2 mt-4 mb-4">
-        <div className="row no-gutters">
-            <div className="col-sm"> {" "} </div>
-            <div className="col-sm-1 text-center flex-column d-none d-sm-flex">
-            <div className="row h-50">
-                <div className="col">&nbsp;</div>
-                <div className="col">&nbsp;</div>
-            </div>
-            <h5 className="m-2">
-                <span className="badge rounded-pill bg-success border border-success custom-badge">&nbsp;</span>
-            </h5>
-            <div className="row h-50">
-                <div className="col border-right border-success custom-border">&nbsp;</div>
-                <div className="col">&nbsp;</div>
-            </div>
-            </div>
-            <div className="col-sm py-2">
-            <div className="card">
-                <div className="card-body">
-                {/* <div className="float-right text-muted small">Jan 9th 2019 7:00 AM</div> */}
-                <h4 className="card-title">Autocad</h4>
-                <p className="card-text">Completed an 8-day in-person AutoCAD workshop, primarily focused on Civil Engineering students. It was a highly successful event with many participants.</p>
-                </div>
-            </div>
+            {/* Python For Automation (Right) */}
+        
+        {/* Design Thinking (right) */}
+<div className="row no-gutters">
+    <div className="col-sm"> {" "} </div>
+    <div className="col-sm-1 text-center flex-column d-none d-sm-flex">
+        <div className="row h-50">
+            <div className="col">&nbsp;</div>
+        </div>
+        <h5 className="m-2">
+            <span className="badge rounded-pill bg-success border border-success custom-badge">&nbsp;</span>
+        </h5>
+        <div className="row h-50">
+            <div className="col border-right border-success custom-border">&nbsp;</div>
+            <div className="col">&nbsp;</div>
+        </div>
+    </div>
+    <div className="col-sm py-2">
+        <div className="card">
+            <div className="card-body">
+                <h4 className="card-title">Design Thinking</h4>
+                <small className="card-text mb-2 d-block">June 24th - 25th, 2025</small>
+                <p className="card-text">Successfully wrapped up 2 days interactive Design Thinking workshop, engaging participants in hands-on activities to foster creative problem-solving and innovation.</p>
             </div>
         </div>
-        <div className="row no-gutters">
-            <div className="col-sm py-2">
-            <div className="card">
-                <div className="card-body">
-                {/* <div className="float-right small text-muted">Jan 10th 2019 8:30 AM</div> */}
-                <h4 className="card-title">Python For Automation</h4>
-                <p className="card-text">Completed a 5-day online Python for Automation workshop, featuring hands-on learning led by expert mentors.</p>
-                </div>
-            </div>
-            </div>
-            <div className="col-sm-1 text-center flex-column d-none d-sm-flex">
-            <div className="row h-50">
-                <div className="col border-right border-success custom-border">&nbsp;</div>
-                <div className="col">&nbsp;</div>
-            </div>
-            <h5 className="m-2">
-                <span className="badge rounded-pill bg-success border border-success custom-badge">&nbsp;</span>
-            </h5>
-            <div className="row h-50">
-                <div className="col border-right border-success custom-border">&nbsp;</div>
-                <div className="col">&nbsp;</div>
-            </div>
-            </div>
-            <div className="col-sm"> {" "} </div>
-        </div>
-        <div className="row no-gutters">
-            <div className="col-sm"> {" "} </div>
-            <div className="col-sm-1 text-center flex-column d-none d-sm-flex">
-            <div className="row h-50">
-                <div className="col border-right border-success custom-border">&nbsp;</div>
-                <div className="col">&nbsp;</div>
-            </div>
-            <h5 className="m-2">
-                <span className="badge rounded-pill bg-success border border-success custom-badge">&nbsp;</span>
-            </h5>
-            <div className="row h-50">
-                <div className="col border-right border-success custom-border">&nbsp;</div>
-                <div className="col">&nbsp;</div>
-            </div>
-            </div>
-            <div className="col-sm py-2">
-            <div className="card">
-                <div className="card-body">
-                {/* <div className="float-right text-muted small">Jan 11th 2019 8:30 AM</div> */}
-                <h4 className="card-title">Blockchain</h4>
-                <p>Completed a 5-day blockchain workshop with expert mentors, featuring hands-on learning and a company visit.</p>
-                </div>
-            </div>
+    </div>
+</div>
+
+{/* The Open Source Path (Left) */}
+<div className="row no-gutters">
+    <div className="col-sm py-2">
+        <div className="card">
+            <div className="card-body">
+                <h4 className="card-title">The Open Source Path</h4>
+                <small className="card-text mb-2 d-block">June 26th, 2025</small>
+                <p className="card-text">Successfully wrapped up “The Open Source Path” event, empowering students to explore open source, learn how to crack GSoC, and unlock global career opportunities with talks from experts in the domain.</p>
             </div>
         </div>
-        <div className="row no-gutters">
-            <div className="col-sm py-2">
-            <div className="card">
-                <div className="card-body">
-                {/* <div className="float-right text-muted small">Jan 12th 2019 11:30 AM</div> */}
-                <h4 className="card-title">Coming Up</h4>
-                <p>Something special coming soon...</p>
-                </div>
-            </div>
-            </div>
-            <div className="col-sm-1 text-center flex-column d-none d-sm-flex">
-            <div className="row h-50">
-                <div className="col border-right border-success custom-border">&nbsp;</div>
-                <div className="col">&nbsp;</div>
-            </div>
-            <h5 className="m-2">
-                <span className="badge rounded-pill bg-light border border-success custom-badge">&nbsp;</span>
-            </h5>
-            <div className="row h-50">
-                <div className="col">&nbsp;</div>
-                <div className="col">&nbsp;</div>
-            </div>
-            </div>
-            <div className="col-sm"> {" "} </div>
+    </div>
+    <div className="col-sm-1 text-center flex-column d-none d-sm-flex">
+        <div className="row h-50">
+            <div className="col border-right border-success custom-border">&nbsp;</div>
+            <div className="col">&nbsp;</div>
         </div>
+        <h5 className="m-2">
+            <span className="badge rounded-pill bg-success border border-success custom-badge">&nbsp;</span>
+        </h5>
+        <div className="row h-50">
+            <div className="col border-right border-success custom-border">&nbsp;</div>
+            <div className="col">&nbsp;</div>
+        </div>
+    </div>
+    <div className="col-sm"> {" "} </div>
+</div>
+
+{/* Coming Soon (right) */}
+<div className="row no-gutters">
+    <div className="col-sm"> {" "} </div>
+    <div className="col-sm-1 text-center flex-column d-none d-sm-flex">
+        <div className="row h-50">
+            <div className="col border-right border-warning custom-border">&nbsp;</div>
+            <div className="col">&nbsp;</div>
+        </div>
+        <h5 className="m-2">
+            <span className="badge rounded-pill bg-warning border border-warning custom-badge">&nbsp;</span>
+        </h5>
+        <div className="row h-50">
+            <div className="col">&nbsp;</div>
+            <div className="col">&nbsp;</div>
+        </div>
+    </div>
+    <div className="col-sm py-2">
+        <div className="card border-warning">
+            <div className="card-body">
+                <h4 className="card-title text-warning">More Events on the Horizon</h4>
+                <small className="card-text mb-2 d-block">Something special coming soon...</small>
+                <p className="card-text">Follow us on social media for announcements.</p>
+            </div>
+        </div>
+    </div>
+</div>
         </div>
 
         </section>
