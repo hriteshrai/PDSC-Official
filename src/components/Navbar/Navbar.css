@@ -5,3 +5,27 @@
 .not-active{
     display: none;
 }
+
+.has-submenu .sub-menu {
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: #222;
+  min-width: 180px;
+  z-index: 1000;
+  padding: 0;
+  margin: 0;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: opacity 0.25s 0.15s, visibility 0s 0.15s;
+}
+
+.has-submenu:hover .sub-menu,
+.has-submenu:focus-within .sub-menu {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.25s 0s, visibility 0s 0s;
+}
